@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>贪吃蛇大作战</title>
+		<link rel="stylesheet" type="text/css" href="css/Interface-style.css" />
+	</head>
+	<body>
+		<div class="gamemain">
+			<!-- 游戏标题 -->
+			<head>
+				<div>
+					<h1>贪吃蛇大作战</h1>
+					<!-- 记录吃了多少个蛋 -->
+					<p style="font-size:30px;color:red"> count:<span id="score"
+							style="color:black;font-size: 35px;">0</span> </p>
+				</div>
+			</head>
+			<!-- 游戏菜单 -->
+			<nav>
+				<input id="Pause" type="button" name="name" value="暂停" class="buttom">
+				<input id="Start" type="button" name="name" value="开始" class="buttom">
+				<input id="Refresh" type="button" name="name" value="重新开始" class="buttom">
+				<input id="Speed" type="button" name="name" value="加速" class="buttom">
+				<input id="minus" type="button" name="name" value="减速" class="buttom" />
+			</nav>
+			<!-- 游戏画面 -->
+			<main>
+				<section class="wrap">
+					<div id="snake_map"></div>
+				</section>
+				<aside>
+					<div class="context">
+						本游戏规则：<br /><br />
+						&nbsp;&nbsp;1.蛇的运动时间为0.3秒，我们还可以根据以上的按钮进行设置（暂停，开始，重新开始，加速，减速），还可以一直按v键
+						把蛇的运动时间从0.3提至为0.1秒。长按v键可缓冲暂停，其上下左右为蛇的方向键。<br /><br />
+						&nbsp;&nbsp;2.本游戏蛇是随着吃果实而增长的，蛇在运动的过程中不能碰壁及自己。<br />
+						<br />
+						<span>快来玩吧！</span>
+					</div>
+				</aside>
+			</main>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/game-logic.js"></script>
+</html>
